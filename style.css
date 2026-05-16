@@ -1,16 +1,146 @@
-body {
-    font-family: Arial,  sans-serif; /* Font family */
-    font-size: 24px; /* O tamanho da fonte principal<p></p> tag  */
-    background-color: #8d3b3b; /* A cor do plano de fundo da página */
-    color: #ffffff; /* A cor do texto */ 
+body{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background-color: #8d3b3b;
+    color: white;
+    margin: 0;
 }
-h1 {
-    color: #f88888; /* A cor do cabeçalho */
-    font-size: 40px; /* A cor da fonte do cabeçalho */
-    font-family: Georgia, serif; /* A font usada no cabeçalho*/
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
 }
-h2 {
-    color: #f87474; /* A cor do cabeçalho */
-    font-size: 35px; /* A cor da fonte do cabeçalho */
-    font-family: Georgia, serif; /* A font usada no cabeçalho*/
+
+/* MENU */
+
+.menu{
+    background-color: #6e2c2c;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: #f88787;
+    color: black;
+
+    transform: scale(1.1);
+
+    box-shadow: 0px 0px 15px #ffb3b3;
+}
+
+/* TITULOS */
+
+h1{
+    color: #f88787;
+    font-size: 50px;
+    text-align: center;
+
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change{
+
+0%{ color:#f88787; }
+
+50%{ color:red; }
+
+100%{ color:#f88787; }
+
+}
+
+h2{
+    color: #f87474;
+}
+
+/* PARAGRAFOS */
+
+p{
+    line-height: 1.8;
+}
+
+/* IMAGEM */
+
+img{
+    width: 100%;
+    border-radius: 20px;
+
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale(1.02);
+
+    box-shadow: 0px 0px 20px #ffaaaa;
+}
+
+/* CAIXA */
+
+.caixa-info{
+    background-color: #743232;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-top: 30px;
+}
+
+/* WIDGET */
+
+.widget{
+    background-color: #6e2c2c;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+button{
+    background-color: #f88787;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+
+    background-color: white;
+}
+.widget{
+    background: linear-gradient(145deg, #6e2c2c, #8d3b3b);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
